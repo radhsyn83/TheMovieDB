@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">The Movie DB</string>
+    <string name="whats_you_looking_for">What are you looking for ?</string>
+    <string name="home_search_hint">Search for a movie, show, person...</string>
+    <string name="popular">Popular On TV</string>
+    <string name="search_caption">Millions of movies, TV shows and people to discover.</string>
+    <string name="upcoming">Movie Upcoming</string>
+    <string name="rto">Request time out</string>
+    <string name="no_internet">No internet</string>
+    <string name="unknown_server">Unknown server</string>
+    <string name="rating">Rating</string>
+    <string name="trending">Trending</string>
+    <string name="today">Today</string>
+    <string name="this_week">This Week</string>
+    <string name="format_multy_string">%1$s | %2$s</string>
+    <string name="on_going">On Going</string>
+    <string name="release">Released</string>
+    <string name="time_format_length">%1$shr %2$smin</string>
+    <string name="description">Description</string>
+    <string name="cast">Cast</string>
+    <string name="trailer">Trailer</string>
+    <string name="recomendation">Recommendation</string>
+    <string name="watch">WATCH NOW, click here!</string>
+    <string name="known_for">Known For</string>
+    <string name="birth_date">Birthday</string>
+    <string name="place_birth">Place of Birth</string>
+    <string name="also_known">Also Known As</string>
+    <string name="biography">Biography</string>
+    <string name="As">As / Character</string>
+</resources>

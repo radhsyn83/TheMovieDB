@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/_3sdp"
+        android:paddingBottom="@dimen/_3sdp"
+        android:paddingLeft="@dimen/_6sdp"
+        android:paddingRight="@dimen/_6sdp">
+
+        <TextView
+            android:id="@+id/trendingTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/trending"
+            android:layout_margin="@dimen/_6sdp"
+            android:fontFamily="@font/opensans_bold"
+            android:textSize="@dimen/_14ssp"
+            android:textColor="@color/light_black"/>
+
+        <RadioGroup
+            android:id="@+id/trendingRb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/_4sdp"
+            android:layout_marginRight="@dimen/_4sdp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_toRightOf="@id/trendingTitle"
+            android:layout_toEndOf="@id/trendingTitle">
+
+            <RadioButton
+                android:id="@+id/rbLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:padding="@dimen/_4sdp"
+                android:textSize="@dimen/_10ssp"
+                android:textColor="@color/light_white"
+                android:background="@drawable/radiobt_left_selector"
+                android:button="@android:color/transparent"
+                android:text="@string/today" />
+
+            <RadioButton
+                android:id="@+id/rbRight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_4sdp"
+                android:textSize="@dimen/_10ssp"
+                android:textColor="@color/light_orange"
+                android:background="@drawable/radiobt_right_selector"
+                android:button="@android:color/transparent"
+                android:text="@string/this_week" />
+        </RadioGroup>
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_trending"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:paddingLeft="@dimen/_6sdp"
+        android:paddingRight="@dimen/_6sdp"/>
+
+</LinearLayout>
